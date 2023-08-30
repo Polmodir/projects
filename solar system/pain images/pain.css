@@ -1,0 +1,194 @@
+body{
+    background-image:url(./universe.jpeg);
+}
+.all{
+    color: white;
+    font-family:monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.sun{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+.ring1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 8.8s infinite linear; 
+}
+.mercury{
+    top: -12px;
+    position: absolute;
+}
+.mercuryplanet{
+    height: 25px;
+    animation: planetrotation 8.8s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ring2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 22.5s infinite linear; 
+}
+.venus{
+    top: -18px;
+    position: absolute;
+}
+.venusplanet{
+    height: 37.5px;
+    animation: planetrotation 22.5s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ring3{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 36.5s infinite linear;
+}
+.earth{
+    top: -20px;
+    position: absolute;
+}
+.earthplanet{
+    height: 37.5px;
+    animation: planetrotation 36.5s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ring5{
+    position: absolute;
+    width: 375px;
+    height: 375px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 68.7s infinite linear;
+}
+.mars{
+    top: -10px;
+    position: absolute;
+}
+.marsplanet{
+    height: 25px;
+    animation: planetrotation 68.7s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ring6{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 318s infinite linear;
+}
+.jupiter{
+    top: -35px;
+    position: absolute;
+}
+.jupiterplanet{
+    height: 75px;
+    animation: planetrotation 318s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ring7{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 768.5s infinite linear;
+}
+.saturn{
+    top: -35px;
+    position: absolute;
+}
+.saturnplanet{
+    height: 75px;
+    animation: planetrotation 768.5s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ring8{
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 2226s infinite linear;
+}
+.uranus{
+    top: -35px;
+    position: absolute;
+}
+.uranusplanet{
+    height: 75px;
+    animation: planetrotation 2226s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ring9{
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    border: solid 1px white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    animation: rotation 4372.5s infinite linear;
+}
+.neptune{
+    top: -25px;
+    position: absolute;
+}
+.neptuneplanet{
+    height: 50px;
+    animation: planetrotation 4372.5s infinite linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@keyframes rotation{
+    from {rotate: 0deg;}
+    to {rotate:360deg;}
+}
+@keyframes planetrotation{
+    from {rotate: 0deg;}
+    to {rotate:-360deg;}
+}

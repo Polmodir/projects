@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./paincalculator.css" />
+  </head>
+  <body>
+    <img width="100px"src="./tag.png">
+    <div class="whole">
+      <div class="equation">
+        <div id="bruh">0</div>
+      </div>
+      <div class="buttons">
+        <button value="AC" id="ac"class="button1" onclick="stop()">AC</button>
+        <button value="+/-" id="+/-"class="button1"onclick="reverse()">+/-</button>
+        <button value="%" id="%"class="button1"onclick="temdeg('%')">%</button>
+        <button value="/" id="/"class="button2" onclick="temdeg('/')">÷</button>
+        <button value="7" id="7"class="button3" onclick="toonuud('7')">7</button>
+        <button value="8" id="8"class="button3" onclick="toonuud('8')">8</button>
+        <button value="9" id="9"class="button3" onclick="toonuud('9')">9</button>
+        <button value="*" id="*"class="button2" onclick="temdeg('*')">×</button>
+        <button value="4" id="4"class="button3" onclick="toonuud('4')">4</button>
+        <button value="5" id="5"class="button3" onclick="toonuud('5')">5</button>
+        <button value="6" id="6"class="button3" onclick="toonuud('6')">6</button>
+        <button value="-" id="-"class="button2" onclick="temdeg('-')">-</button>
+        <button value="1" id="1"class="button3" onclick="toonuud('1')">1</button>
+        <button value="2" id="2"class="button3" onclick="toonuud('2')">2</button>
+        <button value="3" id="3"class="button3" onclick="toonuud('3')">3</button>
+        <button value="+" id="+"class="button2" onclick="temdeg('+')">+</button>
+        <button value="0" id="0"class="button4" onclick="toonuud('0')">0</button>
+        <button value="." id="."class="button1" onclick="tseg('.')">.</button>
+        <button value="=" id="="class="button2" onclick="hariu()">=</button>
+      </div>
+    </div>
+    <script src="./paincalculator.js"></script>
+  </body>
+</html>

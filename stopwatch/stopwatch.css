@@ -1,0 +1,29 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./bomb.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top{
+    display: flex;
+    font-size: 250px;
+    gap: 50px;
+    color: seagreen;
+    text-shadow: white;
+}
+.bottom{
+    display: flex;
+    gap: 100px
+}
+.button{
+    width: 400px;
+    height: 100px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 75px;
+    background-color:seagreen;
+    color: white;
+    border: none
+}

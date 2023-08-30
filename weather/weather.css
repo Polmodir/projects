@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.icon{
+    position: absolute;
+    top: 90px;
+    right: 42px;
+}
+@font-face{
+    font-family: "nice";
+    src: url(./Manrope-VariableFont_wght.ttf)
+}
+body{
+    background-color: gray;
+    font-family: nice;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.whole{
+    width: 1600px;
+    height: 1200px;
+    display: flex;
+}
+.left{
+    background-color: #f3f4f6;
+    width: 800px;
+    height: 1200px;
+    position: relative;
+    border-top-left-radius:  50px;
+    border-bottom-left-radius: 50px;
+    z-index: 0;
+}
+.right{
+    background-color: #0f141e;
+    width: 800px;
+    height: 1200px;
+    position: relative;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index: 0;
+}
+.sun1{
+    z-index: 2;
+    position: absolute;
+    top: 177px;
+    left: 130px;
+}
+.moon1{
+    z-index: 2;
+    position: absolute;
+    right: 145px;
+    bottom: 104px;
+}
+/* SEARCH BAR */
+.searchicon:hover{
+    opacity: 100%;
+}
+.bar{
+    background-color: white;
+    width: 464px;
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 16px;
+    border-radius: 48px;
+    margin-bottom: 10px;
+}
+.search{
+    border: none;
+    width: 400px;
+    font-weight: 700;
+    font-size: 32px;
+    outline: none;
+    z-index: 5;
+    background-color: transparent;
+    font-family: nice;
+}
+.searchicon{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 20%;
+}
+.results{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 512px;
+    padding: 16px 0px;
+    font-weight: 700;
+    font-size: 28px;
+    border-radius: 24px;
+    display: none;
+    backdrop-filter: blur(20px);
+}
+.resultsection{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0px 24px;
+    margin-bottom: 20px;
+}
+.resultsection:hover{
+    .searchicon{
+        opacity: 100%;
+    };
+    .resultsectiontext{
+            color:dimgrey;
+    }
+}
+.resultsection:active{
+    opacity: 50%;
+}
+.resultsectiontext{
+    width: 500px;
+}
+.searchbar{
+    width: 512px;
+    left: 40px;
+    top: 40px;
+    position: absolute;
+    z-index: 5;
+}
+/* BACKGROUND CIRCLES */
+.symbol{
+    width: 140px;
+    height: 140px;
+    background-color: #f3f4f6;
+    border-radius: 140px;
+    border: 1px #e6e6e6 solid;
+    position: absolute;
+    z-index: 2;
+    top: 530px;
+    left: -70px;
+}
+.fordec1 {
+    position: absolute;
+    top: 500px;
+    width: 50px;
+    height: 40px;
+    border-radius: 0 0 0 100%;
+    background-color: #0f141e;
+    box-shadow: #f3f4f6 -18px 1px;
+}
+.fordec2 {
+    position: absolute;
+    top: 660px;
+    width: 50px;
+    height: 40px;
+    border-radius: 100% 0 0 0;
+    background-color: #0f141e;
+    box-shadow: #f3f4f6 -18px -1px;
+}
+.circle1, .circle2, .circle3, .circle4, .circle5{
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+}
+.circle1{
+    top: 430px;
+}
+.circle2{
+    top: 330px;
+}
+.circle3{
+    top: 130px;
+}
+.circle6, .circle7, .circle8, .circle9, .circle10{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+}
+.circle6{
+    top: 430px;
+}
+.circle7{
+    top: 330px;
+}
+.circle8{
+    top: 130px;
+}
+/* DARKSECTION */
+.night{
+    width: 414px;
+    height: 832px;
+    background-color: rgba(17,24,39,0.75);
+    position: absolute;
+    z-index: 2;
+    bottom: 142px;
+    left: 193px;
+    border-radius: 48px;
+    backdrop-filter: blur(10px);
+}
+.nighttop{
+    width: 398px;
+    height: 504px;
+    background: linear-gradient(#1f2937, transparent);
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    border-radius: 42px;
+    z-index: 3;
+}
+.tempnight{
+    background: linear-gradient(#f9fafb, transparent);
+    font-weight: 800;
+    font-size: 144px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.weathernight{
+    font-weight: 800;
+    font-size: 24px;
+    color: #777cce;
+}
+.citynight{
+    font-weight: 800;
+    font-size: 48px;
+    color: white;
+}
+.datenight{
+    font-weight: 500;
+    font-size: 18px;
+    color: #9ca3af;
+}
+.temperaturenight{
+    position: absolute;
+    left: 48px;
+    bottom: 120px;
+}
+.nighttoptext{
+    position: absolute;
+    left: 40px;
+    top: 56px;
+}
+.moon2{
+    position: absolute;
+    top: 196px;
+    left: 68px;
+    -webkit-filter: drop-shadow(10px 10px 30px gray);
+    filter: drop-shadow(10px 10px 30px gray);
+}
+.bottomnight{
+    width: 318px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 48px;
+    bottom: 40px;
+}
+/* LIGHTSECTION */
+.day{
+    width: 414px;
+    height: 832px;
+    background-color: rgba(255,255,255,0.75);
+    position: absolute;
+    z-index: 2;
+    bottom: 142px;
+    left: 193px;
+    border-radius: 48px;
+    backdrop-filter: blur(10px);
+}
+.daytop{
+    width: 398px;
+    height: 504px;
+    background: linear-gradient(#f9fafb, transparent);
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    border-radius: 42px;
+    z-index: 3;
+}
+.tempday{
+    background: linear-gradient(#111827, #6b7280);
+    font-weight: 800;
+    font-size: 144px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.weatherday{
+    font-weight: 800;
+    font-size: 24px;
+    color: #FF8E27;
+}
+.cityday{
+    font-weight: 800;
+    font-size: 48px;
+    color: #111827;
+}
+.dateday{
+    font-weight: 500;
+    font-size: 18px;
+    color: #6b7280;
+}
+.temperatureday{
+    position: absolute;
+    left: 48px;
+    bottom: 120px;
+}
+.daytoptext{
+    position: absolute;
+    left: 40px;
+    top: 56px;
+}
+.sun2{
+    position: absolute;
+    top: 196px;
+    left: 68px;
+    -webkit-filter: drop-shadow(10px 10px 40px #FFDEA3);
+    filter: drop-shadow(10px 10px 40px #FFDEA3);
+}
+.bottomday{
+    width: 318px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 48px;
+    bottom: 40px;
+}

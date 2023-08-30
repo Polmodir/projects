@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./weather.css" />
+  </head>
+  <body>
+    <div class="whole">
+      <div class="left">
+        <svg class="circle1" width="170" height="340" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle opacity="0.08" cx="170" cy="170" r="169.5" stroke="black"/>
+          </svg>
+        <svg class="circle2" width="270" height="540" viewBox="0 0 270 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle opacity="0.1" cx="270" cy="270" r="269.5" stroke="#111827"/>
+          </svg>
+            <svg class="circle3" width="470" height="940" viewBox="0 0 470 940" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.08" cx="470" cy="470" r="469.5" stroke="#111827"/>
+              </svg>
+              <svg class="circle4" width="670" height="1200" viewBox="0 0 670 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.06" cx="670" cy="600" r="669.5" stroke="#111827"/>
+                </svg>
+                <svg class="circle5" width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.04" cx="800" cy="600" r="869.5" stroke="#111827"/>
+                  </svg>
+                                              
+        <img class="sun1" src="./sun1.png" alt="" />
+        <div class="searchbar">
+          <div class="bar">
+            <div class="searchicon" onclick="searchicon()">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.5098 22.51H23.9298L23.3698 21.97C25.3298 19.69 26.5098 16.73 26.5098 13.51C26.5098 6.33001 20.6898 0.51001 13.5098 0.51001C6.32977 0.51001 0.509766 6.33001 0.509766 13.51C0.509766 20.69 6.32977 26.51 13.5098 26.51C16.7298 26.51 19.6898 25.33 21.9698 23.37L22.5098 23.93V25.51L32.5098 35.49L35.4898 32.51L25.5098 22.51ZM13.5098 22.51C8.52977 22.51 4.50977 18.49 4.50977 13.51C4.50977 8.53001 8.52977 4.51001 13.5098 4.51001C18.4898 4.51001 22.5098 8.53001 22.5098 13.51C22.5098 18.49 18.4898 22.51 13.5098 22.51Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <input
+              class="search"
+              id="search"
+              type="text"
+              placeholder="Search"
+              spellcheck="false"
+              onchange="clear()"
+            />
+          </div>
+          <div class="results" id="results"></div>
+        </div>
+        <div class="day">
+          <div id="daycontain" class="daytop">
+            <div class="daytoptext">
+              <p class="dateday" id="date1">date</p>
+              <p class="cityday" id="cityday">name</p>
+            </div>
+            <img class="sun2" id="sun2" width="262px" src="./Weatherpictures/Day Sun.png" alt="" />
+            <svg
+              class="icon"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.4768 25.5772L23.1596 17.2151C26.2226 11.7453 22.2691 5 16 5C9.73095 5 5.77737 11.7453 8.84045 17.2151L13.5232 25.5772C14.6072 27.5128 17.3928 27.5128 18.4768 25.5772Z"
+                stroke="#4B5563"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle
+                cx="16"
+                cy="13"
+                r="2"
+                stroke="#4B5563"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="temperatureday">
+            <p class="tempday" id="tempday">0°</p>
+            <p class="weatherday" id="weatherday">weather</p>
+          </div>
+          <div class="bottomday">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.92428 12.541L13.9243 4.8743C15.0847 3.76225 16.9153 3.76225 18.0757 4.8743L26.0757 12.541C26.6662 13.1068 27 13.8892 27 14.7069V25C27 26.6569 25.6569 28 24 28H22H19H16H13H10H8C6.34315 28 5 26.6569 5 25V14.7069C5 13.8892 5.33385 13.1068 5.92428 12.541Z"
+                stroke="url(#paint0_linear_202_269)"
+                stroke-width="2"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_202_269"
+                  x1="16"
+                  y1="1.5"
+                  x2="16"
+                  y2="29"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#111827" />
+                  <stop offset="1" stop-color="#6B7280" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg
+              width="33"
+              height="32"
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.8101 25.5772L23.4929 17.2151C26.5559 11.7453 22.6024 5 16.3333 5C10.0643 5 6.11068 11.7453 9.17377 17.2151L13.8565 25.5772C14.9405 27.5128 17.7262 27.5128 18.8101 25.5772Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle
+                cx="16.3333"
+                cy="13"
+                r="2"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="33"
+              height="32"
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.9159 7.36858C16.1058 7.58431 16.3792 7.70794 16.6666 7.70795C16.9539 7.70796 17.2274 7.58435 17.4173 7.36864C19.8166 4.64263 23.9518 4.1919 26.8934 6.42021C29.975 8.75461 30.5808 13.1452 28.2464 16.2268L22.1863 24.2268C20.8558 25.9831 18.7761 27.0105 16.5728 26.9999C14.3695 26.9893 12.2998 25.942 10.9863 24.173L5.04633 16.173C2.74167 13.069 3.38963 8.68448 6.49357 6.37982C9.4381 4.19353 13.5362 4.66439 15.9159 7.36858Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 24.9809C3 20.6434 7.15158 17.5119 11.3222 18.7035L14.787 19.6934C15.5798 19.92 16.4202 19.92 17.213 19.6934L20.6778 18.7035C24.8484 17.5119 29 20.6434 29 24.9809C29 27.2006 27.2006 29 24.9809 29H7.01908C4.7994 29 3 27.2006 3 24.9809Z"
+                stroke="#D1D5DB"
+                stroke-width="2"
+              />
+              <circle cx="16" cy="9" r="6" stroke="#D1D5DB" stroke-width="2" />
+              <path
+                d="M15 9C15 9.55228 15.4477 10 16 10C16.5523 10 17 9.55228 17 9C17 8.44772 17.4477 8 18 8C18.5523 8 19 8.44772 19 9C19 10.6569 17.6569 12 16 12C14.3431 12 13 10.6569 13 9C13 8.44772 13.4477 8 14 8C14.5523 8 15 8.44772 15 9Z"
+                fill="#D1D5DB"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <svg class="circle6"width="170" height="340" viewBox="0 0 170 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle opacity="0.1" cy="170" r="169.5" stroke="white"/>
+          </svg>
+          <svg class="circle7"width="270" height="540" viewBox="0 0 270 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.1" cy="270" r="269.5" stroke="white"/>
+            </svg>
+            <svg class="circle8"width="470" height="940" viewBox="0 0 470 940" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle opacity="0.08" cy="470" r="469.5" stroke="white"/>
+              </svg>
+              <svg class="circle9"width="670" height="1200" viewBox="0 0 670 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle opacity="0.06" cy="600" r="669.5" stroke="white"/>
+                </svg>
+                <svg class="circle10"width="800" height="1200" viewBox="0 0 800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.04" cy="600" r="869.5" stroke="white"/>
+                  </svg>
+                                                                      
+        <img class="symbol" src="./riddler.webp" alt="" />
+        <img class="moon1" src="./moon1.png" alt="" />
+        <div class="fordec1"></div>
+        <div class="fordec2"></div>
+        <div class="night">
+          <div id="nightcontain"class="nighttop">
+            <div class="nighttoptext">
+              <p class="datenight" id="date2">date</p>
+              <p class="citynight" id="citynight">name</p>
+            </div>
+            <svg
+              class="icon"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.4768 25.5772L23.1596 17.2151C26.2226 11.7453 22.2691 5 16 5C9.73095 5 5.77737 11.7453 8.84045 17.2151L13.5232 25.5772C14.6072 27.5128 17.3928 27.5128 18.4768 25.5772Z"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle
+                cx="16"
+                cy="13"
+                r="2"
+                stroke="#9CA3AF"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <img class="moon2" id="moon2"width="262px"src="./Weatherpictures/Night Moon.png" alt="" />
+          </div>
+          <div class="temperaturenight">
+            <p class="tempnight" id="tempnight">0°</p>
+            <p class="weathernight" id="weathernight">weather</p>
+          </div>
+          <div class="bottomnight">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.92428 12.541L13.9243 4.8743C15.0847 3.76225 16.9153 3.76225 18.0757 4.8743L26.0757 12.541C26.6662 13.1068 27 13.8892 27 14.7069V25C27 26.6569 25.6569 28 24 28H22H19H16H13H10H8C6.34315 28 5 26.6569 5 25V14.7069C5 13.8892 5.33385 13.1068 5.92428 12.541Z"
+                stroke="#F9FAFB"
+                stroke-width="2"
+              />
+            </svg>
+            <svg
+              width="33"
+              height="32"
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.8101 25.5772L23.4929 17.2151C26.556 11.7453 22.6024 5 16.3333 5C10.0643 5 6.1107 11.7453 9.17378 17.2151L13.8566 25.5772C14.9405 27.5128 17.7262 27.5128 18.8101 25.5772Z"
+                stroke="#4B5563"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle
+                cx="16.3333"
+                cy="13"
+                r="2"
+                stroke="#4B5563"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="33"
+              height="32"
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.916 7.36858C16.1058 7.58431 16.3793 7.70794 16.6666 7.70795C16.954 7.70796 17.2275 7.58435 17.4173 7.36864C19.8166 4.64263 23.9519 4.1919 26.8935 6.42021C29.9751 8.75461 30.5808 13.1452 28.2465 16.2268L22.1863 24.2268C20.8559 25.9831 18.7762 27.0105 16.5728 26.9999C14.3695 26.9893 12.2998 25.942 10.9863 24.173L5.04637 16.173C2.74172 13.069 3.38967 8.68448 6.49361 6.37982C9.43815 4.19353 13.5362 4.66439 15.916 7.36858Z"
+                stroke="#4B5563"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 24.9809C3 20.6434 7.15158 17.5119 11.3222 18.7035L14.787 19.6934C15.5798 19.92 16.4202 19.92 17.213 19.6934L20.6778 18.7035C24.8484 17.5119 29 20.6434 29 24.9809C29 27.2006 27.2006 29 24.9809 29H7.01908C4.7994 29 3 27.2006 3 24.9809Z"
+                stroke="#4B5563"
+                stroke-width="2"
+              />
+              <circle cx="16" cy="9" r="6" stroke="#4B5563" stroke-width="2" />
+              <path
+                d="M15 9C15 9.55228 15.4477 10 16 10C16.5523 10 17 9.55228 17 9C17 8.44772 17.4477 8 18 8C18.5523 8 19 8.44772 19 9C19 10.6569 17.6569 12 16 12C14.3431 12 13 10.6569 13 9C13 8.44772 13.4477 8 14 8C14.5523 8 15 8.44772 15 9Z"
+                fill="#4B5563"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./weather.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy Yum Yum</title>
+    <link rel="stylesheet" href="./foods.css">
+</head>
+<body class="body">
+    <audio src="./Night Of The Consumers - Store Track 1 (OST).mp3"></audio>
+    <div id="whole"class="whole">
+        <img class="tag"width="100px"src="./tag.png">
+        <div class="topsection">
+            <img width="200px" height="190px" src="./images/vaultboy.webp">
+            <p class="title">Fallout Nuclear Food Menu</p>
+        </div>
+        <p class="transaction">All transactions done by coke caps</p>
+        <div class="sections">
+            <button class="section" onclick="starter()">All</button>
+            <button class="section" onclick="meals()">Meals</button>
+            <button class="section" onclick="sweets()">Sweets</button>
+            <button class="section" onclick="snacks()">Snacks</button>
+            <button class="section" onclick="drinks()">Drinks</button>
+        </div>
+        <div class="foods" id="foods">
+        </div>
+    </div>
+    <script src="./foods.js"></script>
+</body>
+</html>
