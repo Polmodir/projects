@@ -19,10 +19,10 @@ body{
     gap: 100px
 }
 .button{
-    width: 400px;
+    width: calc(100vw/7);
     height: 100px;
     font-family:'Courier New', Courier, monospace;
-    font-size: 75px;
+    font-size: calc(100vw/30);
     background-color:seagreen;
     color: white;
     border: none
